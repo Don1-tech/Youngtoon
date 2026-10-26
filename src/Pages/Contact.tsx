@@ -44,6 +44,11 @@ const contactLinks = [
   },
 ] as const;
 
+const studioAddress = "Youngtoon Studios, Riara Rd, Nairobi, Kenya";
+
+const googleMapsEmbedUrl =
+  "https://maps.google.com/maps?q=Youngtoon%20Studios%2C%20Riara%20Rd%2C%20Nairobi%2C%20Kenya&output=embed";
+
 export default function ContactPage() {
   const { language } = useLanguage();
 
@@ -143,11 +148,7 @@ export default function ContactPage() {
                 aria-label={link.name}
                 title={link.name}
                 target={link.external ? "_blank" : undefined}
-                rel={
-                  link.external
-                    ? "noopener noreferrer"
-                    : undefined
-                }
+                rel={link.external ? "noopener noreferrer" : undefined}
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -208,6 +209,67 @@ export default function ContactPage() {
               </a>
             ))}
           </nav>
+
+          <section
+            className="contact-location"
+            aria-label="Studio location and opening hours"
+          >
+            <div className="contact-location-details">
+              <div className="contact-detail">
+                <span className="contact-detail-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
+                </span>
+
+                <div className="contact-detail-content">
+                  <h2>Visit Us</h2>
+                  <p className="contact-studio-name">Youngtoon Studios</p>
+                  <p>Riara Road, Nairobi, Kenya</p>
+                  <p>P.O. Box 63795-00619</p>
+                </div>
+              </div>
+
+              <div className="contact-detail">
+                <span className="contact-detail-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                </span>
+
+                <div className="contact-detail-content">
+                  <h2>Hours</h2>
+                  <p>9 AM – 5 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-map">
+              <iframe
+                title={`Google Maps: ${studioAddress}`}
+                src={googleMapsEmbedUrl}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+          </section>
         </section>
 
         <section className="contact-form-card">
