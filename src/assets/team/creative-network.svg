@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" fill="none">
+  <defs>
+    <linearGradient id="path" x1="82" y1="92" x2="1114" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#59D8EE"/>
+      <stop offset=".48" stop-color="#89B8FF"/>
+      <stop offset="1" stop-color="#C286F5"/>
+    </linearGradient>
+    <radialGradient id="node" cx="0" cy="0" r="1" gradientTransform="matrix(0 19 -19 0 0 0)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".24" stop-color="#A8F0FF"/>
+      <stop offset="1" stop-color="#6AAFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="#91B9F2" fill-opacity=".3"/>
+    </pattern>
+  </defs>
+  <path fill="url(#dots)" d="M0 0h1200v520H0z" opacity=".42"/>
+  <g stroke="url(#path)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 392 178 260l126 88 156-176 150 112 151-166 145 118 135-124 119 88" stroke-width="3.5" opacity=".9"/>
+    <path d="m40 392 130 62 134-106m126-176 42-102 138 72m150-72 4 96m151-96 35-50m119 138 93-10" stroke-width="1.7" opacity=".66"/>
+    <path d="m178 260-48-137 176 49 126-106m28 250-36 144 186-92m115-74 57 143 94-95m151-48 63 123 119-78" stroke-width="1.55" opacity=".52"/>
+    <path d="m40 392 139-11 125-33 156-176 149 193 151-166 145 118 135-124 119 88" stroke-width="1" opacity=".36"/>
+    <path d="m178 260 215-194 263 112 301-104 255 226M304 348l184 27 244 82 210-177 255 88" stroke-width="1" opacity=".28"/>
+  </g>
+  <g fill="url(#node)">
+    <circle cx="40" cy="392" r="24"/><circle cx="178" cy="260" r="24"/>
+    <circle cx="304" cy="348" r="24"/><circle cx="460" cy="172" r="24"/>
+    <circle cx="610" cy="284" r="24"/><circle cx="761" cy="118" r="24"/>
+    <circle cx="906" cy="236" r="24"/><circle cx="1041" cy="112" r="24"/>
+    <circle cx="1160" cy="200" r="24"/><circle cx="170" cy="454" r="17"/>
+    <circle cx="438" cy="66" r="17"/><circle cx="488" cy="419" r="17"/>
+    <circle cx="610" cy="140" r="17"/><circle cx="667" cy="457" r="17"/>
+    <circle cx="912" cy="62" r="17"/><circle cx="1104" cy="359" r="17"/>
+  </g>
+  <g fill="#F7FDFF" stroke="url(#path)" stroke-width="3">
+    <circle cx="40" cy="392" r="5"/><circle cx="178" cy="260" r="5"/>
+    <circle cx="304" cy="348" r="5"/><circle cx="460" cy="172" r="5"/>
+    <circle cx="610" cy="284" r="5"/><circle cx="761" cy="118" r="5"/>
+    <circle cx="906" cy="236" r="5"/><circle cx="1041" cy="112" r="5"/>
+    <circle cx="1160" cy="200" r="5"/><circle cx="170" cy="454" r="4"/>
+    <circle cx="438" cy="66" r="4"/><circle cx="488" cy="419" r="4"/>
+    <circle cx="610" cy="140" r="4"/><circle cx="667" cy="457" r="4"/>
+    <circle cx="912" cy="62" r="4"/><circle cx="1104" cy="359" r="4"/>
+  </g>
+</svg>

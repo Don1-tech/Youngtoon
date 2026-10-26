@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family:
+    Inter, "Noto Sans KR", "Malgun Gothic", "Noto Sans JP", "Yu Gothic",
+    "Meiryo", "Noto Sans SC", "Microsoft YaHei", "Noto Sans CJK SC",
+    Arial, Helvetica, sans-serif;
+  color: #151217;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --yt-ink: #151217;
+  --yt-muted: #625d65;
+  --yt-magenta: #d52ab8;
+  --yt-lilac: #cdbdce;
+  --yt-page: #fff;
+  --yt-white: #fff;
+  --yt-border: rgba(25, 18, 28, 0.12);
+  --yt-shadow: 0 12px 30px rgba(30, 20, 32, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  min-width: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--yt-page);
+  color: var(--yt-ink);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family:
+    Inter, "Noto Sans KR", "Malgun Gothic", "Noto Sans JP", "Yu Gothic",
+    "Meiryo", "Noto Sans SC", "Microsoft YaHei", "Noto Sans CJK SC",
+    Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+::selection {
+  color: #fff;
+  background: var(--yt-magenta);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

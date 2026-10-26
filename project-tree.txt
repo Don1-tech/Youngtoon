@@ -1,0 +1,34 @@
+﻿├── public
+│   ├── favicon.svg
+│   └── icons.svg
+├── src
+│   ├── assets
+│   │   ├── images
+│   │   │   ├── About US
+│   │   │   ├── homepage
+│   │   │   ├── production
+│   │   │   └── Training
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── Pages
+│   ├── Sections
+│   │   ├── carousel
+│   │   ├── footer
+│   │   ├── hero
+│   │   └── navbar
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── project-tree.txt
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts

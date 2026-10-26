@@ -1,0 +1,16 @@
+/* The Vite starter styles have been removed; the site is styled by its sections. */
+
+:root {
+  color: #151217;
+  background: #d9d7d9;
+}
+
+main {
+  display: block;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #d52ab8;
+  outline-offset: 4px;
+}
